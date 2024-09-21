@@ -8,7 +8,7 @@
             Padding="20" >
             <Entry x:Name="TaskEntry" Placeholder="Digite sua Tarefa"/>
 
-            <Button Clicked="OnCounterClicked" Text="Adicionar Tarefas"/>
+            <Button Clicked="OnAddTaskClicked" Text="Adicionar Tarefas"/>
 
             <ListView x:Name="TaskListView" Margin="0,20,0,0" >
                 <ListView.ItemTemplate>
@@ -19,7 +19,7 @@
                                 <Label Text="{Binding TaskName}" VerticalOptions="Center"/>
                                 <Label Text=" "/>
                                 <Button  BackgroundColor="Blue"
-                         Clicked="OnCompleteTaskrClicked"
+                         Clicked="OnCompleteTaskClicked"
                          Text="Concluir"
                          TextColor="Black"
                          BorderColor="Black"/>
